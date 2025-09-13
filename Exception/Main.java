@@ -1,20 +1,19 @@
 import java.util.Scanner;
 
-// Custom checked exception
+
 class InsufficientFundsException extends Exception {
     public InsufficientFundsException(String message) {
         super(message);
     }
 }
 
-// Custom unchecked exception
 class InvalidTransactionFormatException extends RuntimeException {
     public InvalidTransactionFormatException(String message) {
         super(message);
     }
 }
 
-// Account class
+
 class Account {
     String accountId;
     double balance;
@@ -36,7 +35,7 @@ class Account {
     }
 }
 
-// Main class
+
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -98,4 +97,5 @@ public class Main {
         sc.close();
     }
 }
+
 
